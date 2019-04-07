@@ -3,7 +3,7 @@ The first deep learning model for circular RNA (circRNA) back-splicing event pre
 
 This documentation is part of the *Bioinformatics* supplementary information release for DeepCirCode. For details of this work, users can refer to the original paper "**Deep Learning of the Back-splicing Code for Circular RNA Formation**" (Wang *et al.*, 2019). 
 # Requirements 
-Dataset preparation and DeepCirCode model construction were performed in R. Motif visualization was performed in Python.  
+DeepCirCode is a R package including one necessary function written in python script.  
 
 - R 3.5.3 + 64-bit; 
 
