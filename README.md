@@ -100,7 +100,7 @@ Here, we applied R package "reticulate" to run this python script in R interface
 **Firstly**, load package and "getMotifs.py": 
 ``` 
 library(reticulate) 
-path <- system.file(“getMotifs.py”, package = “DeepCirCode”)
+path <- system.file("getMotifs.py", package = "DeepCirCode")
 source_python(path) 
 ``` 
 **Secondly**, run DeepCirCode_getMotifs(): 
