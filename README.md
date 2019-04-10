@@ -3,7 +3,7 @@ For circular RNA (circRNA) back-splicing prediction, DeepCirCode utilizes a conv
 
 This documentation is part of the supplementary information release for DeepCirCode. For details of this work, users can refer to the original paper "**Deep Learning of the Back-splicing Code for Circular RNA Formation**" (J. Wang  and L. Wang, 2019). 
 # Requirements 
-DeepCirCode is a R package including one necessary function written in python script. To use DeepCirCode package, R >= 3.5.3 is required. The versions of other packages are suggestive ones. 
+DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode package, R >= 3.5.3 is required. The versions of other packages are suggestive ones. 
 
 - R 3.5.3 + 64-bit; 
 
@@ -31,12 +31,12 @@ library("DeepCirCode")
 devtools::loaded_packages() 
 ``` 
 # Getting the training and test sets 
-The training and test sets for all the three organisms (human, mouse and fruit fly) have been packaged together with the "DeepCirCode" package. They are named as "HumanTrain", "HumanTest", "MouseTrain", "MouseTest", "FlyTrain" and "FlyTest". Users can load any dataset by using function **data(**dataset_Name**)**, such as: 
+The training and test sets for all the three species (human, mouse and fruit fly) have been included in the "DeepCirCode" package. They are named as "HumanTrain", "HumanTest", "MouseTrain", "MouseTest", "FlyTrain" and "FlyTest". Users can load a dataset by using the function **data(**dataset_Name**)**, such as: 
 ``` 
 data(HumanTrain)  # datasets are lazy loaded as variable “HumanTrain” until being used
 data(HumanTest) 
 ``` 
-All the datasets are in the shape of c(instance_number,3), with each of the three variables representing "**label**" (0 for negative, 1 for positive),"**RNA_input_seq**" (the raw 200 nucleotide RNA sequences, e.g. AUCC...GACG) and "**encoded_seq**" (one-hot encoded RNA sequence of 800 characters in length, e.g. 100000010001...00010010), which can be checked such as by using: 
+All the datasets are in the form of c(instance_number,3), with each of the three variables representing "**label**" (0 for negative, 1 for positive),"**RNA_input_seq**" (the raw 200 nucleotide RNA sequences, e.g. AUCC...GACG) and "**encoded_seq**" (one-hot encoded RNA sequence of 800 characters in length, e.g. 100000010001...00010010), which can be checked using: 
 ``` 
 dim(HumanTrain) 
 colnames(HumanTrain) 
@@ -46,7 +46,7 @@ HumanTrain$RNA_input_seq[1]
 HumanTrain$encoded_seq[1] 
 ``` 
 # Converting one-hot encoded sequence into 3D matrix input for DeepCirCode 
-To be convenient, all the matrix datasets have been packaged with DeepCirCode. This section is useful for users preferring to use DeepCirCode package to prepare their own datasets. Users can also jump to next section for dataset loading and model construction. 
+For convenience, all the datasets of DeepCirCode have been included in this package. This section provides users some help for using DeepCirCode package to prepare their own datasets. Users may also jump to next section for dataset loading and model construction. 
 
 The first layer of DeepCirCode is a 1D convolution layer, which requires the input_shape = c(200,4) for sequences of 200-nt with 4 channels (A,T/U,G,C). **x_train** (features of training set) and **x_test** (features of test set) should be converted into matrix of the shape c(instance_number, 200,4); **y_train** (label of training set) and **y_test** (label of test set) should be converted into matrix of the shape c(instance_number, 2) with **y[ ,1]** represents the negative class and **y[ ,2]** represents the positive class. 
 
