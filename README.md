@@ -120,7 +120,9 @@ data(x_train_human)
 data(y_train_human) 
 data(x_test_human) 
 data(y_test_human) 
+```
 
+```
 # Get position probability matrix for each kernel: 
 
 DeepCirCode_getMotifs(x_train_human, y_train_human, x_test_human, y_test_human) 
