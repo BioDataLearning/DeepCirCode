@@ -5,19 +5,19 @@ This documentation is part of the supplementary information release for DeepCirC
 # Requirements 
 DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode package, R >= 3.5.3 is required. The versions of other packages are suggestive ones. 
 
-- R 3.5.3 (64-bit); 
+- R 3.5.3 (64-bit)
 
-- Python 2.7 (64-bit); 
+- Python 2.7 (64-bit)
 
-- Keras 2.2.4 in R and Python; 
+- Keras 2.2.4 in R and Python
 
-- Tensorflow 1.10 in R and Python; 
+- Tensorflow 1.10 in R and Python
 
 - ROCR 1.0-7 in R
 
 - reticulate 1.11.1 in R
 
-- numpy in Python; 
+- numpy in Python
 # Installing DeepCirCode 
 ``` 
 # Download "DeepCirCode" package using devtools from github, and load DeepCirCode: 
