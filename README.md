@@ -1,7 +1,7 @@
 # DeepCirCode 
 For circular RNA (circRNA) back-splicing prediction, DeepCirCode utilizes a convolutional neural network (CNN) with one-hot encoded nucleotide sequence as the input. Relevant features can be automatically extracted by DeepCirCode. Each kernel of the first CNN layer of DeepCirCode can be regarded as a motif scanner. In order to make these DeepCirCode-learnt features biologically interpretable, we also implemented a visualization method to represent these features as sequence motifs. The DeepCirCode method has been applied to three different species, including human, mouse and fruit fly, for circRNA back-splicing prediction. Comparision of DeepCirCode-learnt motifs from these species has also been performed.  
 
-This documentation is part of the supplementary information release for DeepCirCode. For details of this work, users can refer to the original paper "**Deep Learning of the Back-splicing Code for Circular RNA Formation**" (J. Wang  and L. Wang, 2019). 
+This documentation is part of the supplementary information release for DeepCirCode. For details of this work, users can refer to our paper "**Deep Learning of the Back-splicing Code for Circular RNA Formation**" (J. Wang  and L. Wang, 2019). 
 # Requirements 
 DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode package, R >= 3.5.3 is required. The versions of other packages are suggestive ones. 
 
