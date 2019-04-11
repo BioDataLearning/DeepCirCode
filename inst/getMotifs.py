@@ -89,7 +89,7 @@ def DeepCirCode_getMotifs(x_train,y_train, x_test, y_test):
 
     print('Making motifs')
     motifs = motifs[:, :, [0, 3, 2, 1]]
-    motifs_file = open('DeepCirCode_Position_Frequency_Matrix.txt', 'w')
+    motifs_file = open('DeepCirCode_Position_Probability_Matrix.txt', 'w')
     motifs_file.write('MEME version 4.9.0\n\n'
                   'ALPHABET= ACGU\n\n'
                   'strands: + -\n\n'
