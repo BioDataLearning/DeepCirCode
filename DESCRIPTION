@@ -4,7 +4,7 @@ Version: 1.0.0
 Authors@R: c(person("Jun", "Wang", email = "jwang9@clemson.edu", role = c("aut", "cre")),
            person("Liangjiang", "Wang", email = "liangjw@clemson.edu", role = "aut"))
 Description: Deep learning of the back-splicing code for circular RNA formation
-Depends: R (>= 3.4)
+Depends: R (>= 3.0)
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
