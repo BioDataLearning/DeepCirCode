@@ -6,7 +6,7 @@ This documentation is part of the supplementary information release for DeepCirC
 # Requirements 
 DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode, R version >= 3.4 is required. Versions for other packages are suggested. 
 
-- R >= 3.4 (64-bit)
+- R >= 3.0 (64-bit)
 
 - Python 2.7 (64-bit)
 
