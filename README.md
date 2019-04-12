@@ -4,7 +4,7 @@ In this study, by applying the state-of-art machine learning techniques, we have
 This documentation is part of the supplementary information release for DeepCirCode. For details of this work, users can refer to our paper "**Deep Learning of the Back-splicing Code for Circular RNA Formation**" (J. Wang  and L. Wang, 2019). 
 
 # Requirements 
-DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode, R version >= 3.4 is required. Versions for other packages are suggested. 
+DeepCirCode is an R package with one necessary function written in Python. To use DeepCirCode, R version >= 3.0 is required. Versions for other packages are suggested. 
 
 - R >= 3.0 (64-bit)
 
