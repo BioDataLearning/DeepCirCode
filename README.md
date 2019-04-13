@@ -18,10 +18,11 @@ DeepCirCode is an R package with one necessary function written in Python. To us
 
 - numpy in Python
 
-**NOTE:** before using DeepCirCode, users should verify that the Keras package can be used in R by:
+**NOTE:** Detailed instructions for installing Keras in R can be found at [Keras](https://keras.rstudio.com). Before using DeepCirCode, users should verify that the Keras package can be used in R by:
+
 ```
 library("keras")
-model <- keras_model_sequential() # Testing keras, no error for this step!!!!
+model <- keras_model_sequential() # Testing keras, must be no error for this step!!!!
 ```
 
 # Installing DeepCirCode 
