@@ -106,4 +106,5 @@ def DeepCirCode_getMotifs(x_train,y_train, x_test, y_test):
         motifs_file.write('\n')
 
     motifs_file.close()
+    print("Done")
 
