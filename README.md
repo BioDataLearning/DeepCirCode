@@ -112,7 +112,7 @@ source_python(path)
 ``` 
 **Step 2**, applying DeepCirCode_getMotifs(): 
 
-Motif visualization needs the weights of the first layer of DeepCirCode which is not stored in a saved model. So, DeepCirCode_getMotifs() will train DeepCirCode and then visualize the kernels in the first CNN layer:
+Motif visualization needs the weights of the first layer of DeepCirCode which are not stored in a saved model. So, DeepCirCode_getMotifs() will firstly train the DeepCirCode and then visualize the kernels in the first CNN layer:
 
 ``` 
 # Load datasets if not loaded: 
